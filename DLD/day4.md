@@ -24,13 +24,13 @@ inst.components.equippable:SetOnUnequip(onUnequip) -- 当脱下装备时触发
 ```lua
 local function onEquip(inst, owner) 
     owner.AnimState:OverrideSymbol("swap_object", "swap_growingswordlite", "wand") -- 把第2/3个参数替换成你动画的位置和播放动画
-    owner.AnimState:Show("ARM_carry") -- 就这么写
-    owner.AnimState:Hide("ARM_normal") -- 就这么写
+    owner.AnimState:Show("ARM_carry") -- 展示拿东西的手
+    owner.AnimState:Hide("ARM_normal") -- 展示没拿东西的手
 end
 
 local function onUnequip(inst, owner) 
-    owner.AnimState:Hide("ARM_carry")  -- 就这么写
-    owner.AnimState:Show("ARM_normal")  -- 就这么写
+    owner.AnimState:Hide("ARM_carry")  -- 展示拿东西的手
+    owner.AnimState:Show("ARM_normal")  -- 展示没拿东西的手
 end 
 ```
 
