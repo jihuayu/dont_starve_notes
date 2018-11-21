@@ -1,4 +1,4 @@
-# 每天做一点(do litter everyday)
+# 每天做一点(do little everyday)
 -----
 ### 每天学习一点饥荒mod制作，目录：
 - day1:[mod的创建](./day1.md)
